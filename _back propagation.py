@@ -9,7 +9,7 @@ def sigmoid(n):
     res = 1 / (1 + np.exp(-n))
     return res
 
-z = np.array([[0,0,-1],[0,1,-1],[1,0,-1],[1,1,-1],])    #Input
+z = np.array([[0,1,-1],[-1,1,-0],[-1,0,1],[1,0,-1],])    #Input
 print(z.shape)
 d = np.array([[0],[1],[1],[0],])                        #Teacher values
 print("Weights V - should be ones")
